@@ -6,6 +6,8 @@ const AnimalForm = (props) => {
   })
 
   const handleChange = event => {
+    console.log(`${event.target.name} : ${event.target.value}`);
+
     setAnimal({
       ...animal,
       [event.target.name]: event.target.value
